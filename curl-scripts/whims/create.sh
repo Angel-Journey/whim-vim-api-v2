@@ -12,7 +12,6 @@ curl "${API}${URL_PATH}" \
     "whim": {
       "title": "'"${TITLE}"'",
       "location": "'"${LOCATION}"'",
-      "time": "'"${TIME}"'",
       "body": "'"${BODY}"'"
     }
   }'

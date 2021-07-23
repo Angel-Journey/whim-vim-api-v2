@@ -34,7 +34,7 @@ router.get('/whims', requireToken, (req, res, next) => {
 
 // INDEX (all)
 // GET /whims
-router.get('/whims/all', requireToken, (req, res, next) => {
+router.get('/whims', requireToken, (req, res, next) => {
   Whim.find()
     .then(whims => {
       return whims.map(whim => whim.toObject())
