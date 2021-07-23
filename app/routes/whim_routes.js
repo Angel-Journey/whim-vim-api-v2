@@ -34,14 +34,14 @@ router.get('/whims', requireToken, (req, res, next) => {
 
 // INDEX (all)
 // GET /whims
-router.get('/whims', requireToken, (req, res, next) => {
-  Whim.find()
-    .then(whims => {
-      return whims.map(whim => whim.toObject())
-    })
-    .then(whims => res.status(200).json({ whims: whims }))
-    .catch(next)
-})
+// router.get('/whims/all', requireToken, (req, res, next) => {
+//   Whim.find()
+//     .then(whims => {
+//       return whims.map(whim => whim.toObject())
+//     })
+//     .then(whims => res.status(200).json({ whims: whims }))
+//     .catch(next)
+// })
 
 // UPDATE
 // PATCH /whims/6099578461dd6be72ba96d87
